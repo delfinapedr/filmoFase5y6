@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <LinearLayout
+        android:id="@+id/imageContainer2"
+        android:layout_width="370dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="26dp"
+        android:background="#000000"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/botonPelis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/botonPelis"
+        app:layout_constraintTop_toBottomOf="@+id/botonSeries"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imagen1"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:contentDescription="Cover image for the article"
+            android:src="@drawable/imagen_portada" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
+
+        <ImageView
+            android:id="@+id/imagen2"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/imagen_portada" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
+
+        <ImageView
+            android:id="@+id/imagen3"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/peli_1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/imageContainer3"
+        android:layout_width="373dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="8dp"
+        android:background="#000000"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/buttonsStrip_abajo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonPelis"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imagen4"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/imagen_portada" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
+
+        <ImageView
+            android:id="@+id/imagen5"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/imagen_portada" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
+
+        <ImageView
+            android:id="@+id/imagen6"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/peli_1" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/buttonsStrip_arriba"
+        android:layout_width="379dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="8dp"
+        android:background="#CCCCCC"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/botonListas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="50dp"
+            android:layout_height="43dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/logo"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="10dp" />
+
+        <EditText
+            android:id="@+id/editTextSearch"
+            android:layout_width="243dp"
+            android:layout_height="wrap_content"
+            android:hint="Buscar..."
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            tools:layout_editor_absoluteX="87dp"
+            tools:layout_editor_absoluteY="24dp" />
+
+        <ImageView
+            android:id="@+id/logoUsuario"
+            android:layout_width="50dp"
+            android:layout_height="43dp"
+            android:layout_margin="8dp"
+            android:contentDescription="Profile picture for the user"
+            android:onClick="irAModPerfil"
+            android:src="@drawable/user" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/botonPelis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/inter_font"
+        android:onClick="irAMenPelis"
+        android:text="Ver películas"
+        app:layout_constraintBottom_toTopOf="@+id/imageContainer3"
+        app:layout_constraintEnd_toStartOf="@+id/imageContainer3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageContainer2" />
+
+    <LinearLayout
+        android:id="@+id/buttonsStrip_abajo"
+        android:layout_width="404dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="8dp"
+        android:background="#CCCCCC"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageContainer3">
+
+        <!-- Botón Home -->
+
+        <!-- Botón Favoritos -->
+        <Button
+            android:id="@+id/botonHome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="#000000"
+            android:fontFamily="@font/inter_font"
+            android:gravity="center"
+            android:onClick="irAMainActivity"
+            android:text="Home"
+            android:textColor="#FFFFFF"
+            app:icon="@drawable/home"
+            app:iconGravity="top"
+            app:iconSize="40dp" />
+
+        <Button
+            android:id="@+id/botonFavoritos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="#000000"
+            android:fontFamily="@font/inter_font"
+            android:gravity="center"
+            android:onClick="irAFavoritos"
+            android:text="Favoritos"
+            android:textColor="#FFFFFF"
+            app:icon="@drawable/favs"
+            app:iconGravity="top"
+            app:iconPadding="8dp"
+            app:iconSize="40dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/botonSeries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/inter_font"
+        android:onClick="irAMenSeries"
+        android:text="Ver series"
+        app:layout_constraintBottom_toTopOf="@+id/imageContainer2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageContainer1" />
+
+    <LinearLayout
+        android:id="@+id/imageContainer1"
+        android:layout_width="371dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="8dp"
+        android:background="#000000"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/botonSeries"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonListas"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imagen7"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/imagen_portada" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
+
+        <ImageView
+            android:id="@+id/imagen8"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/imagen_portada" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
+
+        <ImageView
+            android:id="@+id/imagen9"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/peli_1" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/botonListas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="264dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/inter_font"
+        android:onClick="irAFavoritos"
+        android:text="Ver tus listas"
+        app:layout_constraintBottom_toTopOf="@+id/imageContainer1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonsStrip_arriba" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

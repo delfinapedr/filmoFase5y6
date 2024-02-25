@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Flecha hacia atrás -->
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="59dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/back"
+        android:fontFamily="@font/inter_font"
+        android:onClick="irAMenuPrincipal"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp"
+        android:textColor="@android:color/transparent"
+        android:textSize="18sp" />
+
+    <!-- Texto "Perfil" al lado de la flecha -->
+
+    <!-- Nombre de usuario -->
+
+    <!-- Imagen de usuario -->
+
+    <TextView
+        android:id="@+id/usernameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="96dp"
+        android:fontFamily="@font/inter_font"
+        android:text="Perfil de usuario"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/userImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/user"
+        android:layout_below="@id/usernameText"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="irAFavoritos" />
+
+    <!-- ScrollView para botones -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userImage"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Botón desplegable "Modificar datos" -->
+
+
+            <!-- Botón "Mis Listas" -->
+            <Button
+                android:id="@+id/myListsButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/inter_font"
+                android:text="Mis Listas"
+                android:onClick="irAFavoritos"/>
+
+            <!-- Botón "Cerrar Sesión" -->
+            <Button
+                android:id="@+id/logoutButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_font"
+                android:onClick="irAMainActivity"
+                android:text="Cerrar Sesión" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    tools:context=".men_serie">
+
+    <LinearLayout
+        android:id="@+id/buttonsStrip1"
+        android:layout_width="423dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="#CCCCCC"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/logo"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="10dp" />
+
+        <SearchView
+            android:id="@+id/BuscadorSeries"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:queryHint="Buscar por nombre o género..." />
+
+        <!-- Increase padding to create larger touch area -->
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView2"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:id="@+id/buttonsStrip2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:background="#CCCCCC"
+        android:orientation="horizontal">
+
+        <!-- Botón Home -->
+        <Button
+            android:id="@+id/botonSeries"
+            android:layout_width="0dp"
+            android:layout_height="51dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="#000000"
+            android:fontFamily="@font/inter_font"
+            android:gravity="center"
+            android:onClick="irAMainActivity"
+            android:text="Home"
+            android:textColor="#FFFFFF"
+            app:icon="@drawable/home"
+            app:iconGravity="top"
+            app:iconSize="40dp" />
+
+        <Button
+            android:id="@+id/botonFavoritos"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="#000000"
+            android:fontFamily="@font/inter_font"
+            android:freezesText="false"
+            android:gravity="center"
+            android:onClick="irAFavoritos"
+            android:text="Favoritos"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            app:icon="@drawable/favs"
+            app:iconGravity="top"
+            app:iconPadding="8dp"
+            app:iconSize="40dp" />
+    </LinearLayout>
+
+</LinearLayout>

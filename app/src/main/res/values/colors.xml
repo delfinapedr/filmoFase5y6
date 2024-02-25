@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#141414</color>
+    <color name="main_text_color">#a7a7a7</color>
+    <color name="linked_text">#183a6c</color>
+    <color name="background_registro">#2d2f30</color>
+    <color name="background_boton_registro">#2d76e2</color>
+    <color name="background_text_box_registro">#414344</color>
+</resources>

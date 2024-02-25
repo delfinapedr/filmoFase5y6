@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="164dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <!-- Texto "Usuarios activos recientemente" -->
+    <TextView
+        android:id="@+id/textoUsuariosActivos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="120dp"
+        android:text="Usuarios activos recientemente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <!-- Imagen y Texto del Usuario 1 -->
+    <ImageView
+        android:id="@+id/imagenUsuario1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="64dp"
+        android:onClick="irAMenuPrincipal"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/textoNombreUsuario1"
+        app:layout_constraintEnd_toStartOf="@+id/imagenUsuario2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textoUsuariosActivos"
+        app:srcCompat="@drawable/usuario1"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textoNombreUsuario1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:minHeight="48dp"
+        android:onClick="irAMenuPrincipal"
+        android:text="Nombre usuario 1"
+        app:layout_constraintEnd_toStartOf="@+id/textoNombreUsuario2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagenUsuario1" />
+
+    <!-- Imagen y Texto del Usuario 2 -->
+    <ImageView
+        android:id="@+id/imagenUsuario2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="64dp"
+        android:onClick="irAMenuPrincipal"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imagenUsuario1"
+        app:layout_constraintTop_toBottomOf="@+id/textoUsuariosActivos"
+        app:srcCompat="@drawable/usuario2"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textoNombreUsuario2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:minHeight="48dp"
+        android:onClick="irAMenuPrincipal"
+        android:text="Nombre usuario 2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textoNombreUsuario1"
+        app:layout_constraintTop_toBottomOf="@+id/imagenUsuario2" />
+
+    <!-- Botón "Iniciar Sesión" -->
+    <Button
+        android:id="@+id/buttonLogin1"
+        android:layout_width="285dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginEnd="63dp"
+        android:background="#FF5722"
+        android:onClick="irAMenPerfil"
+        android:text="Iniciar Sesión"
+        android:textColor="#212121"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRegister1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textoNombreUsuario2" />
+
+    <!-- Botón "¿Eres nuevo? Regístrate" -->
+    <Button
+        android:id="@+id/buttonRegister1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#2196F3"
+        android:fontFamily="@font/inter_font"
+        android:onClick="irACrearCuenta"
+        android:text="¿Eres nuevo? Regístrate"
+        android:textColor="#212121"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogin1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

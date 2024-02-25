@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Filmocat</string>
+    <string name="active_users">Usuarios activos recientemente</string>
+    <string name="user_name1">Nombre Usuario 1</string>
+    <string name="user_name2">Nombre Usuario 2</string>
+    <string name="new_user">¿Eres Nuevo?</string>
+    <string name="sign_up">Regístrate</string>
+    <string name="Home_button">Home</string>
+    <string name="fav_button">Favourites</string>
+    <string name="series">Series</string>
+    <string name="movies">Películas</string>
+    <string name="profile">Perfil</string>
+    <string name="editar_datos">Modificar datos</string>
+    <string name="my_lists">Mis Listas</string>
+    <string name="account">Cuenta</string>
+    <string name="log_out">Cerrar Sesión</string>
+    <string name="movie_name">Nombre Película</string>
+    <string name="movie_description">Descripción</string>
+    <string name="links">Links</string>
+    <string name="add_my_list">My List</string>
+    <string name="year_release">Año de estreno de la película</string>
+    <string name="movie_duration">Duración</string>
+    <string name="creator">creator</string>
+    <string name="cast">Cast</string>
+    <string name="actor_name">Nombre actor/actriz</string>
+    <string name="actor_date_birth">Fecha nacimiento</string>
+    <string name="bio">Biografía actor/actriz</string>
+    <string name="best_known_for">Más conocida/o por: </string>
+    <string name="trailer_link">trailer</string>
+</resources>
